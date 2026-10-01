@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Pay for Locker";
+}
+
+<div>
+    <h1>Pay for Locker</h1>
+
+    <p>
+        Locker: A-101
+    </p>
+
+    <p>
+        Amount: R100.00
+    </p>
+
+    <form method="post" action="/Payment/Create">
+
+        <input
+            type="hidden"
+            name="FirstName"
+            value="John" />
+
+        <input
+            type="hidden"
+            name="LastName"
+            value="Doe" />
+
+        <input
+            type="hidden"
+            name="Email"
+            value="john@example.com" />
+
+        <input
+            type="hidden"
+            name="Amount"
+            value="100.00" />
+
+        <input
+            type="hidden"
+            name="PaymentId"
+            value="TEST-001" />
+
+        <input
+            type="hidden"
+            name="ItemName"
+            value="Locker Payment" />
+
+        <input
+            type="hidden"
+            name="ItemDescription"
+            value="My Locker demo payment" />
+
+        <button type="submit">
+            Pay with PayFast
+        </button>
+
+    </form>
+</div>
